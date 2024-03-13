@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import { BsPlus, BsEyeFill } from "react-icons/bs";
 
 const Product = ({ product }) => {
-  console.log(product);
   // destructure product
   const { id, image, category, title, price } = product;
   return (
