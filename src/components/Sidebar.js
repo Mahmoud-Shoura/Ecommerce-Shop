@@ -35,6 +35,7 @@ const Sidebar = () => {
           return <CartItem item={item} key={item.id} />;
         })}
       </div>
+      <div>sidebar bottom</div>
     </div>
   );
 };
