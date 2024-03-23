@@ -1,6 +1,7 @@
 import React from "react";
 // mport Link
 import { Link } from "react-router-dom";
+import { IoMdClose } from "react-icons/io";
 
 const CartItem = ({ item }) => {
   // destructure item
@@ -15,12 +16,17 @@ const CartItem = ({ item }) => {
         <div>
           {/* title & remove icon */}
           <div>
+            {/* title */}
             <Link
               to={`/product/${id}`}
               className="text-sm uppercase font-medium max-w-[240px] text-primary hover:underline"
             >
               {title}
             </Link>
+            {/* remove icon */}
+            <div>
+              <IoMdClose />
+            </div>
           </div>
         </div>
       </div>
